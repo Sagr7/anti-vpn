@@ -1,0 +1,17 @@
+<meta>
+    <info author="Overlord" version="1.0.1" name="Anti-VPN" description="This script finds out who uses VPN" type="script" />
+	
+	<script src="server.lua" />
+	
+	<settings>
+		<setting name="*vpnkick" friendlyname="Kick VPN user" value="true" accept="true/false" desc="Set true if you want to kick the player after detecting his VPN" />
+		<setting name="*vpnwarn" friendlyname="Warn admins" value="false" accept="true/false" desc="Set true if you want the ADMINS to be noticed of the VPN user" />
+		<setting name="*vpnacl" friendlyname="ACL group" value="Admin" desc="The ACL group whos will be notified and has the ability of using the command (/checkVPN)" />
+	</settings>
+	
+	<!-- ACL Rights	-->
+	<aclrequest>
+		<right name="function.fetchRemote" access="true" />
+		<right name="function.kickPlayer" access="true" />
+	</aclrequest>
+</meta>
